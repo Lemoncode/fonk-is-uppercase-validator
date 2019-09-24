@@ -6,7 +6,7 @@
 
 This is a [fonk](https://github.com/Lemoncode/fonk) microlibrary that brings validation capabilities to:
 
-- Validate if a field of a form is a uppercase string
+- Validate if a field of a form is an uppercase string
 
 How to add it to an existing form validation schema:
 
@@ -19,7 +19,7 @@ const myFormValues = {
 }
 ```
 
-We can add a isUppercase validation to the myFormValues
+We can add an isUppercase validation to the myFormValues
 
 ```javascript
 import { isUppercase } from '@lemoncode/fonk-is-uppercase-validator';
