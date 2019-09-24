@@ -1,7 +1,7 @@
 import { validator, setErrorMessage } from './validator';
 
 const VALIDATOR_TYPE = 'IS_UPPERCASE';
-const DEFAULT_MESSAGE = 'The value must be a uppercase string';
+const DEFAULT_MESSAGE = 'The value must be an uppercase string';
 
 describe('fonk-is-uppercase-validator specs', () => {
   it('should return succeeded validation when it feeds value equals undefined', () => {
@@ -167,7 +167,7 @@ describe('fonk-is-uppercase-validator specs', () => {
     });
   });
 
-  it('should return succeeded validation when it feeds value is a uppercase string', () => {
+  it('should return succeeded validation when it feeds value is an uppercase string', () => {
     // Arrange
     const value = 'HELLO TEST';
 
@@ -184,7 +184,7 @@ describe('fonk-is-uppercase-validator specs', () => {
     });
   });
 
-  it('should return failed validation when it feeds value is not a uppercase string', () => {
+  it('should return failed validation when it feeds value is not an uppercase string', () => {
     // Arrange
     const value = 'Hello Test';
 
