@@ -14,7 +14,7 @@ We have the following form model:
 
 ```
 const myFormValues = {
-  product : 'shoes',
+  product: 'shoes',
   price: 20,
 }
 ```
@@ -25,7 +25,9 @@ We can add an isUppercase validation to the myFormValues
 import { isUppercase } from '@lemoncode/fonk-is-uppercase-validator';
 
 const validationSchema = {
-  product: [isUppercase.validator],
+  field: {
+    product: [isUppercase.validator],
+  },
 };
 ```
 
@@ -45,12 +47,14 @@ isUppercase.setErrorMessage('El campo debe de ser una cadena en mayúsculas');
 import { isUppercase } from '@lemoncode/fonk-is-uppercase-validator';
 
 const validationSchema = {
-  price: [
-    {
-      validator: isUppercase.validator,
-      message: 'Error message only updated for the validation schema',
-    },
-  ],
+  field: {
+    price: [
+      {
+        validator: isUppercase.validator,
+        message: 'Error message only updated for the validation schema',
+      },
+    ],
+  },
 };
 ```
 
